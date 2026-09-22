@@ -1,7 +1,12 @@
-from flask import Flask
+def twice(somefunc):
+    def inner(*args, **kwargs):
+        somefunc(*args, **kwargs)
+        somefunc(*args, **kwargs) 
+    
+    return inner 
 
-app = Flask(__name__)
+@twice
+def saymoo():
+    print("moo")
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+saymoo()
