@@ -1,3 +1,3 @@
-# developing-the-interactive-web-lec-3-max-lin-texan
+#developing-the-interactive-web-lec-3-max-lin-texan
 
-# source .venv/bin/activate
+to enter the project environemnt: source .venv/bin/activate
